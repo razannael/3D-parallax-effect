@@ -1,4 +1,90 @@
-.fas.fa-search {
-  font-size: 24px; /* Adjust the size as needed */
-  color: #007bff; /* Change the color to your preference */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {  
+  background-color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+.logo{
+  width: 100px;
+}
+header{
+  width: 100%;
+  border-bottom: 0.4px solid #a79d9d;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+  margin: 0 auto;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.99rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.search a{
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+}
+
+.hamurger{
+  padding-left: 1rem;
+}
+
+.hamurger a{
+ padding: 0;
+ width: 35px;
+ height: 35px;
+ display: flex;
+ border-radius: 50%;
+ background-color: rgba(115, 115, 115, 0.5);
+ backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
+ justify-content: center;
+ align-items: center;
+}
+
+.hamurger .bar{
+  width: 54%;
+  height: 1.3px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
+}
+
+.hamurger .bar::after, .hamurger .bar::before{
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 2px;
+  left: 50%;
+}
+
+.hamurger .bar::before{
+  transform: translateY(-4.55px) translateX(-50%);
+}
+.hamurger .bar::after{
+  transform: translateY(4.55px) translateX(-50%);
 }
