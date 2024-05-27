@@ -7,15 +7,25 @@
 }
 
 body {  
-  background-color: #333;
   font-family: 'Poppins', sans-serif;
 }
+
+::selection{
+  background-color: #0b372dbb;
+}
+
 .logo{
   width: 100px;
 }
 header{
   width: 100%;
-  border-bottom: 0.4px solid #a79d9d;
+  border-bottom: 0.5px solid #ffffff3f;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.2rem 0;
 }
 header nav{
   display: flex;
@@ -87,4 +97,220 @@ header ul li a{
 }
 .hamurger .bar::after{
   transform: translateY(4.55px) translateX(-50%);
+}
+
+main{
+ background-color: #353;
+ height: 100vh;
+ width: 100vw;
+ overflow: hidden;
+ position: relative;
+}
+.bg-img{
+  position: absolute;
+  top: calc(50% - 390px);
+  left: calc(50% + 10px);
+  width: 2800px;
+  z-index: 1;
+}
+
+.fog-7{
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% + 300px);
+  width: 1800px;
+  z-index: 2;
+}
+
+.mountain-10{
+  position: absolute;
+  top: calc(50% - 69px);
+  left: calc(50% + 230px);
+  width: 892px;
+  z-index: 3;
+}
+
+.fog-6{
+  position: absolute;
+  top: calc(50% + 65px);
+  left: calc(50% - 40px);
+  width: 1692px;
+  z-index: 4;
+}
+
+.mountain-9{
+  position: absolute;
+  top: calc(50% + 113px);
+  left: calc(50% - 457px);
+  width: 470px;
+  z-index: 5;
+}
+
+.mountain-8{
+  position: absolute;
+  top: calc(50% + 86px);
+  left: calc(50% - 202px);
+  width: 812px;
+  z-index: 6;
+}
+
+
+
+.fog-5{
+  position: absolute;
+  top: calc(50% + 160px);
+  left: calc(50% + 20px);
+  width: 450px;
+  z-index: 7;
+}
+
+
+.mountain-7{
+  position: absolute;
+  top: calc(50% + 100px);
+  left: calc(50% + 305px);
+  width: 538px;
+  z-index: 8;
+}
+
+
+.text{
+  position: absolute;
+  top: calc(50% - 130px);
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  pointer-events: auto !important;
+}
+
+.text h2{
+  font-size: 6.5rem;
+  font-weight: 100;
+  line-height: 0.88;
+}
+
+.text h1{
+  font-size: 8.5rem;
+  font-weight: 800;
+  line-height: 0.88;
+}
+
+.mountain-6{
+  position: absolute;
+  top: calc(50% + 100px);
+  left: calc(50% + 645px);
+  width: 550px;
+  z-index: 10;
+}
+
+.fog-4{
+  position: absolute;
+  top: calc(50% + 30px);
+  left: calc(50% + 550px);
+  width: 700px;
+  z-index: 11;
+}
+
+.mountain-5{
+  position: absolute;
+  top: calc(50% + 200px);
+  left: calc(50% + 120px);
+  width: 550px;
+  z-index: 12;
+}
+
+.fog-3{
+  position: absolute;
+  top: calc(50% + 180px);
+  left: calc(50% + 100px);
+  width: 990px;
+  z-index: 13;
+}
+
+.mountain-4{
+  position: absolute;
+  top: calc(50% + 200px);
+  left: calc(50% - 360px);
+  width: 750px;
+  z-index: 14;
+}
+
+.mountain-3{
+  position: absolute;
+  top: calc(50% + 200px);
+  left: calc(50% + 698px);
+  width: 450px;
+  z-index: 15;
+}
+
+
+.fog-2{
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% + 900px);
+  width: 900px;
+  z-index: 16;
+}
+
+.mountain-2{
+  position: absolute;
+  top: calc(50% + 180px);
+  left: calc(50% + 410px);
+  width: 750px;
+  z-index: 17;
+}
+
+.mountain-1{
+  position: absolute;
+  top: calc(50% + 50px);
+  left: calc(50% - 700px);
+  width: 550px;
+  z-index: 18;
+}
+
+.sun-rays{
+  position: absolute;
+  top: calc(50% - 386px);
+  left: calc(50% + 130px);
+  width: 700px;
+  z-index: 19;
+  pointer-events: none;
+}
+.black-shadow{
+  position: absolute;
+  top: calc(50% + 100px);
+  left: calc(50% + 500px);
+  width: 2700px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.fog-1{
+  position: absolute;
+  top: calc(50% - 90px);
+  left: calc(50% + 100px);
+  width: 2000px;
+  z-index: 21;
+}
+
+.vignette{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center,rgba(0,0,0,0) 65%,rgba(0,0,0,0.7));
+  z-index: 100;
+  pointer-events: none;
+}
+
+.parallax{
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+
 }
