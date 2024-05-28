@@ -7,7 +7,8 @@ let xVal = 0,
         yVal = e.clientY - window.innerHeight / 2;
 
         parallax_el.forEach((el)=>{ 
-            el.style.transform = `translateX(calc(-50% + ${-xVal}px)) translateY(calc(-50% + ${yVal}px))`
+            let speedx = el.dataset.speedx;
+            el.style.transform = `translateX(calc(-50% + ${-xVal * speedx}px)) translateY(calc(-50% + ${yVal}px))`
     });
 
     });
