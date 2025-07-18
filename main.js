@@ -6,11 +6,11 @@ let xVal = 0,
 
 
     const update = (cursorPosition) => {
-        parallax_el.forEach((el)=>{ 
-            let speedx = el.dataset.speedx;
-            let speedy = el.dataset.speedy;
-            let speedz = el.dataset.speedz;
-            let rotateSpeed = el.dataset.rotation;
+        parallax_el.forEach((el)=>{
+            let speedx = parseFloat(el.dataset.speedx);
+            let speedy = parseFloat(el.dataset.speedy);
+            let speedz = parseFloat(el.dataset.speedz);
+            let rotateSpeed = parseFloat(el.dataset.rotation);
 
             let isLeft = parseFloat(getComputedStyle(el).left) < window.innerWidth / 2 ? 1 : -1;
             let zVal = (cursorPosition - parseFloat(getComputedStyle(el).left)) * isLeft * 0.09;
